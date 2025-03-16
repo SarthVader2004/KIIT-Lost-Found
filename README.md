@@ -1,69 +1,91 @@
-# Welcome to your Lovable project
 
-## Project info
+KIIT Lost and Found
 
-**URL**: https://lovable.dev/projects/5eef4285-e673-4ae1-ba15-3661ccb22cbd
+A web application designed to help students at KIIT University report and retrieve lost items efficiently. This platform allows users to post lost/found items, search for reported items, and connect with others to reclaim their belongings.
 
-## How can I edit this code?
+🚀 Features
 
-There are several ways of editing your application.
+User Authentication – Secure login/signup via Supabase.
 
-**Use Lovable**
+Post Lost & Found Items – Upload images, descriptions, and contact details.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/5eef4285-e673-4ae1-ba15-3661ccb22cbd) and start prompting.
+Search & Filter – Find lost items using categories and keywords.
 
-Changes made via Lovable will be committed automatically to this repo.
+Notifications & Updates – Get notified when an item matching your post is found.
 
-**Use your preferred IDE**
+Secure Communication – Contact finders directly through the platform.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🛠 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Frontend
 
-Follow these steps:
+🟢 React – JavaScript library for building user interfaces.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🔵 TypeScript – Ensures type safety and better code maintainability.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+⚡ Vite – Fast development build tool.
 
-# Step 3: Install the necessary dependencies.
-npm i
+🎨 Tailwind CSS – Utility-first CSS framework for styling.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+🏗 Shadcn UI – Component library built on Radix UI and Tailwind.
+
+🎬 Framer Motion – Animations for UI enhancements.
+
+🔀 React Router DOM – Handles routing in the application.
+
+🔳 Lucide React – Icon library for a modern UI.
+
+🔄 React Query (TanStack Query) – Handles data fetching and state management.
+
+Backend
+
+🗄 Supabase – Open-source Firebase alternative providing:
+
+📌 PostgreSQL database for data storage.
+
+🔑 User authentication system.
+
+🖼 Storage buckets for file uploads (images).
+
+🔒 Row-level security policies for data protection.
+
+🎯 Getting Started
+
+1️⃣ Clone the Repository
+
+git clone https://github.com/your-username/kiit-lost-found.git
+cd kiit-lost-found
+
+2️⃣ Install Dependencies
+
+npm install
+
+3️⃣ Set Up Environment Variables
+
+Create a .env file in the root directory and add your Supabase credentials:
+
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+4️⃣ Run the Development Server
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Visit http://localhost:5173/ in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🏗 Deployment
 
-**Use GitHub Codespaces**
+To deploy the project, use Vercel or Netlify:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+npm run build
 
-## What technologies are used for this project?
+Upload the dist/ folder to your hosting provider.
 
-This project is built with .
+🤝 Contribution
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Want to improve this project? Feel free to fork the repository, create a new branch, and submit a pull request.
 
-## How can I deploy this project?
+📜 License
 
-Simply open [Lovable](https://lovable.dev/projects/5eef4285-e673-4ae1-ba15-3661ccb22cbd) and click on Share -> Publish.
+This project is licensed under the MIT License.
 
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
